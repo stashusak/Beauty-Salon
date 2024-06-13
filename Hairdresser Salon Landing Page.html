@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-[#FCFCFC] dark:bg-[#070707] text-[#070707] dark:text-[#FCFCFC] min-h-screen flex flex-col">
+  
+  <header class="container mx-auto p-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Hairdresser Salon</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:text-[#D2B6A0]">Home</a>
+      <a href="#" class="hover:text-[#D2B6A0]">Gallery</a>
+      <a href="#" class="hover:text-[#D2B6A0]">Services</a>
+      <a href="#" class="hover:text-[#D2B6A0]">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="container mx-auto p-6 text-center flex-1">
+    <h2 class="text-4xl font-bold mb-4">Transform Your Look with Style</h2>
+    <p class="mb-6 text-lg">Experience the best hairdressing services tailored to your unique style.</p>
+    <div class="space-x-4">
+      <button class="bg-[#D2B6A0] hover:bg-[#E5E2DD] text-white py-2 px-4 rounded-lg">Book Appointment</button>
+      <button class="bg-[#070707] hover:bg-[#E5E2DD] text-white py-2 px-4 rounded-lg">Explore Services</button>
+    </div>
+  </section>
+  
+  <section class="container mx-auto p-6">
+    <h3 class="text-3xl font-bold mb-4">Our Services</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-[#E5E2DD] dark:bg-[#070707] p-4 rounded-lg shadow-lg">
+        <img src="https://placehold.co/300x200" alt="Hairstyle 1" class="mb-4 rounded-lg">
+        <h4 class="text-xl font-bold">Hairstyle 1</h4>
+        <p class="mb-2">Description of hairstyle 1.</p>
+        <p class="font-bold">$50</p>
+      </div>
+      <div class="bg-[#E5E2DD] dark:bg-[#070707] p-4 rounded-lg shadow-lg">
+        <img src="https://placehold.co/300x200" alt="Hairstyle 2" class="mb-4 rounded-lg">
+        <h4 class="text-xl font-bold">Hairstyle 2</h4>
+        <p class="mb-2">Description of hairstyle 2.</p>
+        <p class="font-bold">$60</p>
+      </div>
+      <div class="bg-[#E5E2DD] dark:bg-[#070707] p-4 rounded-lg shadow-lg">
+        <img src="https://placehold.co/300x200" alt="Hairstyle 3" class="mb-4 rounded-lg">
+        <h4 class="text-xl font-bold">Hairstyle 3</h4>
+        <p class="mb-2">Description of hairstyle 3.</p>
+        <p class="font-bold">$70</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container mx-auto p-6">
+    <h3 class="text-3xl font-bold mb-4">Book an Appointment</h3>
+    <form class="bg-[#E5E2DD] dark:bg-[#070707] p-6 rounded-lg shadow-lg space-y-4">
+      <div>
+        <label for="name" class="block mb-2">Name</label>
+        <input type="text" id="name" name="name" class="w-full p-2 rounded-lg border border-[#D2B6A0] dark:border-[#FCFCFC]" required>
+      </div>
+      <div>
+        <label for="phone" class="block mb-2">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="w-full p-2 rounded-lg border border-[#D2B6A0] dark:border-[#FCFCFC]" required>
+      </div>
+      <div>
+        <label for="datetime" class="block mb-2">Date & Time</label>
+        <input type="datetime-local" id="datetime" name="datetime" class="w-full p-2 rounded-lg border border-[#D2B6A0] dark:border-[#FCFCFC]" required>
+      </div>
+      <div>
+        <label for="service" class="block mb-2">Service</label>
+        <select id="service" name="service" class="w-full p-2 rounded-lg border border-[#D2B6A0] dark:border-[#FCFCFC]" required>
+          <option value="hairstyle1">Hairstyle 1</option>
+          <option value="hairstyle2">Hairstyle 2</option>
+          <option value="hairstyle3">Hairstyle 3</option>
+        </select>
+      </div>
+      <div>
+        <label for="additional-service" class="block mb-2">Additional Service</label>
+        <select id="additional-service" name="additional-service" class="w-full p-2 rounded-lg border border-[#D2B6A0] dark:border-[#FCFCFC]">
+          <option value="none">None</option>
+          <option value="hairstyle1">Hairstyle 1</option>
+          <option value="hairstyle2">Hairstyle 2</option>
+          <option value="hairstyle3">Hairstyle 3</option>
+        </select>
+      </div>
+      <button type="submit" class="bg-[#D2B6A0] hover:bg-[#E5E2DD] text-white py-2 px-4 rounded-lg">Submit</button>
+    </form>
+  </section>
+
+  <section class="container mx-auto p-6">
+    <h3 class="text-3xl font-bold mb-4">Frequently Asked Questions</h3>
+    <div class="space-y-4">
+      <div class="bg-[#E5E2DD] dark:bg-[#070707] p-4 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold">What services do you offer?</h4>
+        <p>We offer a variety of hairdressing services including cuts, styles, coloring, and more.</p>
+      </div>
+      <div class="bg-[#E5E2DD] dark:bg-[#070707] p-4 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold">How can I book an appointment?</h4>
+        <p>You can book an appointment online through our website or by calling us directly.</p>
+      </div>
+      <div class="bg-[#E5E2DD] dark:bg-[#070707] p-4 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold">What are your operating hours?</h4>
+        <p>We are open from 9 AM to 7 PM, Monday to Saturday.</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-[#070707] text-[#FCFCFC] p-6 mt-auto">
+    <div class="container mx-auto flex justify-between">
+      <p>&copy; 2023 Hairdresser Salon. All rights reserved.</p>
+      <nav class="space-x-4">
+        <a href="#" class="hover:text-[#D2B6A0]">Privacy Policy</a>
+        <a href="#" class="hover:text-[#D2B6A0]">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+  </body>
+</html>
